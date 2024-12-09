@@ -310,47 +310,20 @@ footer {
     color: #534e4b;
 }
 /* Для таблиц на мобильных устройствах */
-/* Мобильные стили */
+/* Это код для мобильных устройств */
 @media (max-width: 768px) {
-    /* Боковая панель */
+    /* Пример для адаптации содержимого на мобильных */
     .sidebar {
-        position: static; /* Сделать меню нефиксированным */
         width: 100%;
+        position: relative;
     }
 
-    /* Контент */
     .content {
-        margin-left: 0; /* Убираем отступ для контента */
+        margin-left: 0;
     }
 
-    /* Таблицы */
     .crypto-table, .defi-table {
         width: 100%;
-        table-layout: auto;
-        overflow-x: auto; /* Добавляем горизонтальную прокрутку для таблиц */
-    }
-
-    .crypto-table th, .crypto-table td, .defi-table th, .defi-table td {
-        display: block; /* Переводим ячейки в блоки */
-        width: 100%;
-    }
-
-    /* Иконки и текст в таблицах */
-    .crypto-name, .defi-name {
-        display: flex;
-        flex-direction: column; /* Выравнивание иконок и текста по вертикали */
-    }
-
-    /* Размеры для шрифтов и таблиц */
-    .crypto-table th, .defi-table th {
-        font-size: 14px;
-    }
-
-    .crypto-table td, .defi-table td {
-        font-size: 12px;
-    }
-
-    .nft-list {
-        flex-direction: column;
+        overflow-x: auto;
     }
 }
