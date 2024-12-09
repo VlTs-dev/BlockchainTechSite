@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курсы и разделы</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li>
+                <a href="#" data-section="prices">
+                    <img src="https://cdn0.iconfinder.com/data/icons/phosphor-bold-vol-2/256/chart-line-up-bold-512.png" alt="Цены">
+                    Цены
+                </a>
+            </li>
+            <li>
+                <a href="#" data-section="nfts">
+                    <img src="https://avatars.mds.yandex.net/i?id=d51b2a31de38268a5fde9c76ceb39e9b_l-5235574-images-thumbs&n=13" alt="NFTs">
+                    NFTs
+                </a>
+            </li>
+            <li>
+                <a href="#" data-section="defi">
+                    <img src="https://avatars.mds.yandex.net/i?id=45aee28c420be054525afee3da382301_l-5221619-images-thumbs&n=13" alt="DeFi">
+                    DeFi
+                </a>
+            </li>
+            <li>
+                <a href="#" data-section="developers">
+                    <img src="https://cdn1.iconfinder.com/data/icons/seo-icons-5/96/Coding-1024.png" alt="Разработчики">
+                    Разработчики
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <!-- Раздел "Цены" -->
+        <div id="prices" class="section">
+            <h1>Цены криптовалют</h1>
+            <table class="crypto-table">
+                <thead>
+                    <tr>
+                        <th>Имя</th>
+                        <th>Цена</th>
+                        <th>1д</th>
+                        <th>Рыночная капитализация</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="crypto-name">
+                            <img src="https://spacecore.pro/images/icons/bitcoin.svg" alt="Bitcoin" class="crypto-icon">
+                            <span>Bitcoin (BTC)</span>
+                        </td>
+                        <td class="numeric-data">$99 872,00</td>
+                        <td class="percent-change green">+0,03%</td>
+                        <td class="numeric-data">$1 977 763 822 929</td>
+                    </tr>
+                    <tr>
+                        <td class="crypto-name">
+                            <img src="https://static.tildacdn.com/tild3236-6133-4335-a366-316262313538/ethereum-eth.svg" alt="Ethereum" class="crypto-icon">
+                            <span>Ethereum (ETH)</span>
+                        </td>
+                        <td class="numeric-data">$4 200,00</td>
+                        <td class="percent-change red">-1,50%</td>
+                        <td class="numeric-data">$487 623 832 903</td>
+                    </tr>
+                    <tr>
+                        <td class="crypto-name">
+                            <img src="https://i.pinimg.com/originals/e6/9d/92/e69d92c8f36c37c84ecf8104e1fc386d.png" alt="XRP" class="crypto-icon">
+                            <span>XRP (XRP)</span>
+                        </td>
+                        <td class="numeric-data">$2,59</td>
+                        <td class="percent-change green">+1,97%</td>
+                        <td class="numeric-data">$148 157 681 991</td>
+                    </tr>
+                    <tr>
+                        <td class="crypto-name">
+                            <img src="https://img.cryptorank.io/coins/chill_guy1731936768520.png" alt="Just a chill guy" class="crypto-icon">
+                            <span>Just a chill guy (CHILLGUY)</span>
+                        </td>
+                        <td class="numeric-data">$0,43</td>
+                        <td class="percent-change red">-6,44%</td>
+                        <td class="numeric-data">$432 196 092</td>
+                    </tr>
+                    <tr>
+                        <td class="crypto-name">
+                            <img src="https://www.tourister.ru/images/busd.svg" alt="BNB" class="crypto-icon">
+                            <span>BNB (BNB)</span>
+                        </td>
+                        <td class="numeric-data">$742,75</td>
+                        <td class="percent-change red">-1,24%</td>
+                        <td class="numeric-data">$108 344 854 545</td>
+                    </tr>
+                    <tr>
+                        <td class="crypto-name">
+                            <img src="https://img.cryptorank.io/coins/solana1606979093056.png" alt="Solana" class="crypto-icon">
+                            <span>Solana (SOL)</span>
+                        </td>
+                        <td class="numeric-data">$236,37</td>
+                        <td class="percent-change red">-1,52%</td>
+                        <td class="numeric-data">$112 491 963 073</td>
+                    </tr>
+                    <tr>
+                        <td class="crypto-name">
+                            <img src="https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/weth.svg" alt="WETH" class="crypto-icon">
+                            <span>WETH (WETH)</span>
+                        </td>
+                        <td class="numeric-data">$4 006,91</td>
+                        <td class="percent-change green">+0,02%</td>
+                        <td class="numeric-data">$10 930 400 398</td>
+                    </tr>
+                    <tr>
+                        <td class="crypto-name">
+                            <img src="https://coincodex.com/en/resources/images/admin/news/12-best-emerging-cry/uniswap-uni.png" alt="Uniswap" class="crypto-icon">
+                            <span>Uniswap (UNI)</span>
+                        </td>
+                        <td class="numeric-data">$18,53</td>
+                        <td class="percent-change green">+1,78%</td>
+                        <td class="numeric-data">$11 130 443 812</td>
+                    </tr>
+                    <tr>
+                        <td class="crypto-name">
+                            <img src="https://www.blockchain.com/explorer/_next/static/media/atom.b3a1078f.svg" alt="Cosmos Hub" class="crypto-icon">
+                            <span>Cosmos Hub (ATOM)</span>
+                        </td>
+                        <td class="numeric-data">$10,06</td>
+                        <td class="percent-change red">-1,19%</td>
+                        <td class="numeric-data">$3 934 114 589</td>
+                    </tr>
+                    <tr>
+                        <td class="crypto-name">
+                            <img src="https://cdn.worldvectorlogo.com/logos/dogecoin.svg" alt="Dogecoin" class="crypto-icon">
+                            <span>Dogecoin (DOGE)</span>
+                        </td>
+                        <td class="numeric-data">$0,46</td>
+                        <td class="percent-change green">+2,40%</td>
+                        <td class="numeric-data">$68 362 803 258</td>
+                    </tr>
+                    <tr>
+                        <td class="crypto-name">
+                            <img src="https://cdn.worldvectorlogo.com/logos/tether.svg" alt="Tether" class="crypto-icon">
+                            <span>Tether (USDT)</span>
+                        </td>
+                        <td class="numeric-data">$1,00</td>
+                        <td class="percent-change red">-0,04%</td>
+                        <td class="numeric-data">$138 026 872 940</td>
+                    </tr>
+                    <tr>
+                        <td class="crypto-name">
+                            <img src="https://cdn.worldvectorlogo.com/logos/tron.svg" alt="TRON" class="crypto-icon">
+                            <span>TRON (TRX)</span>
+                        </td>
+                        <td class="numeric-data">$0,32</td>
+                        <td class="percent-change red">-0,63%</td>
+                        <td class="numeric-data">$27 420 598 943</td>
+                    </tr>
+                    <tr>
+                        <td class="crypto-name">
+                            <img src="https://image.gatedataimg.com/big_data/1724825067490220329f00585b7b58cccd4a4af028.png?w=16&q=75" alt="SUI" class="crypto-icon">
+                            <span>Sui (SUI)</span>
+                        </td>
+                        <td class="numeric-data">$4,18</td>
+                        <td class="percent-change red">-3,22%</td>
+                        <td class="numeric-data">$12 240 996 736</td>
+                    </tr>
+                    <tr>
+                        <td class="crypto-name">
+                            <img src="https://static-00.iconduck.com/assets.00/usd-coin-cryptocurrency-icon-512x512-at5npdb1.png" alt="USDC" class="crypto-icon">
+                            <span>USDC (USDC)</span>
+                        </td>
+                        <td class="numeric-data">$1,00</td>
+                        <td class="percent-change green">+0,04%</td>
+                        <td class="numeric-data">$40 840 454 438</td>
+                    </tr>
+                    <tr>
+                        <td class="crypto-name">
+                            <img src="https://get.celer.app/cbridge-icons/AVAX.png" alt="Avalanche" class="crypto-icon">
+                            <span>Avalanche (AVAX)</span>
+                        </td>
+                        <td class="numeric-data">$50,51</td>
+                        <td class="percent-change red">-0,98%</td>
+                        <td class="numeric-data">$20 624 377 834</td>
+                    </tr>
+                    <tr>
+                        <td class="crypto-name">
+                            <img src="https://digiseller.mycdn.ink/preview/1078014/p1_3437301_b9cb6087.png" alt="Toncoin" class="crypto-icon">
+                            <span>Toncoin (TON)</span>
+                        </td>
+                        <td class="numeric-data">$6,50</td>
+                        <td class="percent-change red">-3,39%</td>
+                        <td class="numeric-data">$16 588 789 201</td>
+                    </tr>
+                    <tr>
+                        <td class="crypto-name">
+                            <img src="https://www.blockchain.com/explorer/_next/static/media/xlm.5a72c608.svg" alt="Stellar" class="crypto-icon">
+                            <span>Stellar (XLM)</span>
+                        </td>
+                        <td class="numeric-data">$0,46</td>
+                        <td class="percent-change red">-4,90%</td>
+                        <td class="numeric-data">$13 777 656 731</td>
+                    </tr>
+                    <tr>
+                        <td class="crypto-name">
+                            <img src="https://www.blockchain.com/explorer/_next/static/media/icp.f9d92e8b.svg" alt="ICP" class="crypto-icon">
+                            <span>Internet Computer (ICP)</span>
+                        </td>
+                        <td class="numeric-data">$13,65</td>
+                        <td class="percent-change red">-4,78%</td>
+                        <td class="numeric-data">$6 486 761 753</td>
+                    </tr>
+                    <tr>
+                        <td class="crypto-name">
+                            <img src="https://cdn-icons-png.flaticon.com/512/7016/7016517.png" alt="Cronos" class="crypto-icon">
+                            <span>Cronos (CRO)</span>
+                        </td>
+                        <td class="numeric-data">$0,19</td>
+                        <td class="percent-change red">-5,42%</td>
+                        <td class="numeric-data">$5 069 386 508</td>
+                    </tr>
+                    <tr>
+                        <td class="crypto-name">
+                            <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands-1/512/114_Eos_logo_logos-512.png" alt="EOS" class="crypto-icon">
+                            <span>EOS (EOS)</span>
+                        </td>
+                        <td class="numeric-data">$1,21</td>
+                        <td class="percent-change red">-7,50%</td>
+                        <td class="numeric-data">$1 838 048 585</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="nfts" class="section hidden">
+            <!-- Заголовок раздела -->
+            <h1 class="nfts-header">Лучшие NFT</h1>
+            <p class="nfts-description">Это лучшие NFT, проданные за последние 24 часа.</p>
+            
+            <!-- Контейнер для изображений -->
+            <div class="nft-list">
+                <div class="nft-item">
+                    <img src="https://i.seadn.io/gae/ulTNkL1s8SxAEkwH4pxkHxMYh2r5HJeBRcURychonbbelmY7Yg1mFkJUS_toAPVTTBGqDtuc1dq5ZwsJv9fUQ0h12f5M919x10wmaUU?auto=format&dpr=1&w=1000" alt="NFT 1" class="nft-image">
+                    <div class="nft-info">
+                        <p class="nft-collection">Bored Ape Yacht Club</p>
+                        <h3 class="nft-title">#7381</h3>
+                        <p class="nft-price"><strong>33,17 ETH</strong> <span class="usd-price">($133 377,23)</span></p>
+                        <p class="nft-owner">Владелец: Vlad Tsybulin</p>
+                    </div>
+                </div>
+                
+                <div class="nft-item">
+                    <img src="https://yt3.googleusercontent.com/GSImnkn28EDTReDyyt4r0-_6HTF9lH5eBQjnmDOlvTeyosrJri14SmdTRw4x8mNBNG7MmVnKAg=s900-c-k-c0x00ffffff-no-rj" alt="NFT 2" class="nft-image">
+                    <div class="nft-info">
+                        <p class="nft-collection">Bored Ape Yacht Club</p>
+                        <h3 class="nft-title">#6152</h3>
+                        <p class="nft-price"><strong>17,6 ETH</strong> <span class="usd-price">($70 494,51)</span></p>
+                        <p class="nft-owner">Владелец: Sam Morgan</p>
+                    </div>
+                </div>
+                
+                <div class="nft-item">
+                    <img src="https://assets-dynamic.kraken.com/media1%2Ffa4cffbe7a0f45aae5f849812e8232a6a3e5b51367b2670cb5edb1e65a6bbae5.png" alt="NFT 3" class="nft-image">
+                    <div class="nft-info">
+                        <p class="nft-collection">CryptoPunks V1(wrapped)</p>
+                        <h3 class="nft-title">#3152</h3>
+                        <p class="nft-price"><strong>3,41 ETH</strong> <span class="usd-price">($13 658,31)</span></p>
+                        <p class="nft-owner">Владелец: Tyler Durden</p>
+                    </div>
+                </div>
+                
+                <div class="nft-item">
+                    <img src="https://public.bnbstatic.com/image/pgc/202311/9b3cfce20b1b72fa01b273f11cf16b17.png" alt="NFT 4" class="nft-image">
+                    <div class="nft-info">
+                        <p class="nft-collection">CryptoPunks V1(wrapped)</p>
+                        <h3 class="nft-title">#9102</h3>
+                        <p class="nft-price"><strong>1,2 ETH</strong> <span class="usd-price">($4 806,44)</span></p>
+                        <p class="nft-owner">Владелец: Jim Milton</p>
+                    </div>
+                </div>
+                <div class="nft-item">
+                    <img src="https://s3.amazonaws.com/cdn.nftpricefloor/projects/v1/mutant-ape-yacht-club.png?version=6" alt="NFT 5" class="nft-image">
+                    <div class="nft-info">
+                        <p class="nft-collection">Mutant Ape Yacht Club</p>
+                        <h3 class="nft-title">#8421</h3>
+                        <p class="nft-price"><strong>41,2 ETH</strong> <span class="usd-price">($165 021,25)</span></p>
+                        <p class="nft-owner">Владелец: John Bennet</p>
+                    </div>
+                </div>
+                <div class="nft-item">
+                    <img src="https://artlogic-res.cloudinary.com/w_1600,h_1600,c_limit,f_auto,fl_lossy,q_auto/artlogicstorage/hofa/images/view/8ab6808ee9768d40476291eb77d45e83.jpg" alt="NFT 6" class="nft-image">
+                    <div class="nft-info">
+                        <p class="nft-collection">Mutant Ape Yacht Club</p>
+                        <h3 class="nft-title">#1632</h3>
+                        <p class="nft-price"><strong>23,1 ETH</strong> <span class="usd-price">($91 732,18)</span></p>
+                        <p class="nft-owner">Владелец: Brad Pitt</p>
+                    </div>
+                </div>
+                <div class="nft-item">
+                    <img src="https://i.seadn.io/s/raw/files/bfd85c82d4ba855b9d56c5de5ee1083e.png?auto=format&dpr=1&w=1000" alt="NFT 7" class="nft-image">
+                    <div class="nft-info">
+                        <p class="nft-collection">Mutant Ape Yacht Club</p>
+                        <h3 class="nft-title">#6301</h3>
+                        <p class="nft-price"><strong>18,5 ETH</strong> <span class="usd-price">($73 465,17)</span></p>
+                        <p class="nft-owner">Владелец: Jeff O'Neal</p>
+                    </div>
+                </div>
+                <div class="nft-item">
+                    <img src="https://www.ixbt.com/img/n1/news/2022/4/1/cp273.png" alt="NFT 8" class="nft-image">
+                    <div class="nft-info">
+                        <p class="nft-collection">CryptoPunks V1(wrapped)</p>
+                        <h3 class="nft-title">#5918</h3>
+                        <p class="nft-price"><strong>11,7 ETH</strong> <span class="usd-price">($46 461,75)</span></p>
+                        <p class="nft-owner">Владелец: Micah Bell</p>
+                    </div>
+                </div>
+                <div class="nft-item">
+                    <img src="https://s3.amazonaws.com/cdn.nftpricefloor/projects/v1/pudgy-penguins.png?version=6" alt="NFT 9" class="nft-image">
+                    <div class="nft-info">
+                        <p class="nft-collection">Pudgy Penguins</p>
+                        <h3 class="nft-title">#1906</h3>
+                        <p class="nft-price"><strong>20,89 ETH</strong> <span class="usd-price">($81 124,64)</span></p>
+                        <p class="nft-owner">Владелец: Tom Adler</p>
+                    </div>
+                </div>
+                <div class="nft-item">
+                    <img src="https://assets-dynamic.kraken.com/media1%2F69476f7f81fc07cc8f6f0ee4c2e9b6a1d46737c7f3016c5af4525fdc7ec7246c.png" alt="NFT 10" class="nft-image">
+                    <div class="nft-info">
+                        <p class="nft-collection">Pudgy Penguins</p>
+                        <h3 class="nft-title">#3544</h3>
+                        <p class="nft-price"><strong>22,73 ETH</strong> <span class="usd-price">($88 270,13)</span></p>
+                        <p class="nft-owner">Владелец: Anonymous</p>
+                    </div>
+                </div>
+                <div class="nft-item">
+                    <img src="https://d2jfnp6ieh0n8b.cloudfront.net/doodle_mascot_1e73fe4bb6.webp?updated_at=2023-01-24T16:39:35.406Z" alt="NFT 11" class="nft-image">
+                    <div class="nft-info">
+                        <p class="nft-collection">Doodles</p>
+                        <h3 class="nft-title">#6789</h3>
+                        <p class="nft-price"><strong>2,3 ETH</strong> <span class="usd-price">($8 931,87)</span></p>
+                        <p class="nft-owner">Владелец: Matt Parker</p>
+                    </div>
+                </div>
+                <div class="nft-item">
+                    <img src="https://i.seadn.io/gcs/files/2115f3780ce2cbd16d457d56966ce2f0.png?auto=format&dpr=1&w=3840" alt="NFT 12" class="nft-image">
+                    <div class="nft-info">
+                        <p class="nft-collection">Ninja Squad Official</p>
+                        <h3 class="nft-title">#7575</h3>
+                        <p class="nft-price"><strong>3,3 ETH</strong> <span class="usd-price">($12 815,29)</span></p>
+                        <p class="nft-owner">Владелец: Matt Parker</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <div id="defi" class="section hidden">
+           
+            
+            <!-- Таблица DeFi -->
+            <table class="defi-table">
+                <thead>
+                    <tr>
+                        <th>Имя</th>
+                        <th>Цена</th>
+                        <th>1д</th>
+                        <th>Рыночная капитализация</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="defi-name">
+                            <img src="https://res.coinpaper.com/coinpaper/stETH_ug10fg.svg" alt="STETH" class="defi-icon">
+                            <span>Lido Staked Ether (STETH)</span>
+                        </td>
+                        <td class="numeric-data">$3 992,58</td>
+                        <td class="percent-change red">-0,14%</td>
+                        <td class="numeric-data">$39 366 497 494</td>
+                    </tr>
+                    <tr>
+                        <td class="defi-name">
+                            <img src="https://www.blockchain.com/explorer/_next/static/media/link.ba45980a.svg" alt="LINK" class="defi-icon">
+                            <span>Chainlink (LINK)</span>
+                        </td>
+                        <td class="numeric-data">$26,39</td>
+                        <td class="percent-change green">+6,23%</td>
+                        <td class="numeric-data">$16 401 206 436</td>
+                    </tr>
+                    <tr>
+                        <td class="defi-name">
+                            <img src="https://coincodex.com/en/resources/images/admin/news/12-best-emerging-cry/uniswap-uni.png" alt="Uniswap" class="defi-icon">
+                            <span>Uniswap (UNI)</span>
+                        </td>
+                        <td class="numeric-data">$18,53</td>
+                        <td class="percent-change green">+1,78%</td>
+                        <td class="numeric-data">$11 130 443 812</td>
+                    </tr>
+                    <tr>
+                        <td class="defi-name">
+                            <img src="https://research.binance.com/static/images/projects/aave-protocol/logo2.png" alt="Aave" class="defi-icon">
+                            <span>Aave (AAVE)</span>
+                        </td>
+                        <td class="numeric-data">$263,05</td>
+                        <td class="percent-change red">-5,33%</td>
+                        <td class="numeric-data">$3 936 442 650</td>
+                    </tr>
+                    <tr>
+                        <td class="defi-name">
+                            <img src="https://s3.tradingview.com/userpics/2605947-6WK3_orig.png" alt="RUNE" class="defi-icon">
+                            <span>THORChain (RUNE)</span>
+                        </td>
+                        <td class="numeric-data">$6,91</td>
+                        <td class="percent-change red">-1,39%</td>
+                        <td class="numeric-data">$2 354 943 606</td>
+                    </tr>
+                    <tr>
+                        <td class="defi-name">
+                            <img src="https://www.blockchain.com/explorer/_next/static/media/dai.dbc7b75e.svg" alt="DAI" class="defi-icon">
+                            <span>Dai (DAI)</span>
+                        </td>
+                        <td class="numeric-data">$1,00</td>
+                        <td class="percent-change green">+0,05%</td>
+                        <td class="numeric-data">$3 461 762 463</td>
+                    </tr>
+                    <tr>
+                        <td class="defi-name">
+                            <img src="https://www.blockchain.com/explorer/_next/static/media/mkr.3e1b0350.svg" alt="MKR" class="defi-icon">
+                            <span>Maker (MKR)</span>
+                        </td>
+                        <td class="numeric-data">$2 055,25</td>
+                        <td class="percent-change red">-2,90%</td>
+                        <td class="numeric-data">$1 830 854 572</td>
+                    </tr>
+                    <tr>
+                        <td class="defi-name">
+                            <img src="https://www.blockchain.com/explorer/_next/static/media/Lido.67e0d95c.svg" alt="LDO" class="defi-icon">
+                            <span>Lido DAO (LDO)</span>
+                        </td>
+                        <td class="numeric-data">$2,02</td>
+                        <td class="percent-change red">-4,72%</td>
+                        <td class="numeric-data">$1 808 272 789</td>
+                    </tr>
+                    <tr>
+                        <td class="defi-name">
+                            <img src="https://www.block-chain24.com/sites/default/files/crypto/pyth_logomark_light_0.svg" alt="PYTH" class="defi-icon">
+                            <span>Pyth Network (PYTH)</span>
+                        </td>
+                        <td class="numeric-data">$0,47</td>
+                        <td class="percent-change red">-6,67%</td>
+                        <td class="numeric-data">$1 705 602 499</td>
+                    </tr>
+                    <tr>
+                        <td class="defi-name">
+                            <img src="https://triv.co.id/assets/user-dashboard/icons/dydx-51df15a05802489540a736e330055d44a37e35a5c6dcfec4953194ae9a48bb64.png" alt="dYdX" class="defi-icon">
+                            <span>dYdX (DYDX)</span>
+                        </td>
+                        <td class="numeric-data">$2,33</td>
+                        <td class="percent-change red">-4,30%</td>
+                        <td class="numeric-data">$1 656 209 781</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+                <div id="developers" class="section hidden">
+                    <!-- Заголовок -->
+                    <h1 class="developers-header">О разработчике</h1>
+                    <p>Этот сайт был разработан Владиславом Цибулиным. Проект представляет собой платформу для отображения актуальных данных о криптовалютах, NFT и DeFi, а также чтобы познакомить неопытных людей с блокчейном.</p>
+                
+                    <!-- Блок информации -->
+                    <div class="developer-info">
+                        <h2>Исходный код</h2>
+                        <p>Вы можете ознакомиться с исходным кодом и предложить улучшения на платформе GitHub.</p>
+                        <a href="https://github.com/VlTs-dev/BlockchainTechSite" target="_blank" class="developer-button">Исходный код</a>
+                    </div>
+                
+                    <!-- Контакты -->
+                    <div class="contact-info">
+                        <h2>Связаться с разработчиком</h2>
+                        <p>Если у вас есть вопросы или предложения, вы можете связаться со мной по email.</p>
+                        <a href="mailto:ваш_email@example.com" class="developer-button">Написать</a>
+                    </div>
+                </div>
+                
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

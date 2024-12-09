@@ -1,0 +1,389 @@
+/* Сброс стандартных отступов и определение box-sizing */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Боковое меню */
+.sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background-color: #f4f4f4;
+    border-right: 1px solid #ddd;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    display: flex;
+    align-items: center; /* Выравнивание по центру */
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.sidebar ul li img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px; /* Отступ между иконкой и текстом */
+}
+
+.content {
+    margin-left: 220px; /* Сдвиг контента вправо на ширину бокового меню */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Стили таблицы криптовалют */
+.crypto-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.crypto-table th,
+.crypto-table td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.crypto-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Иконки криптовалют */
+.crypto-name {
+    display: flex;
+    align-items: center;
+}
+
+.crypto-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px; /* Отступ между иконкой и текстом */
+}
+
+.numeric-data {
+    text-align: right; /* Числовые данные выравниваются по правому краю */
+    font-weight: bold;
+}
+
+/* Процент изменения */
+.percent-change {
+    font-weight: bold;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+/* Стили для строк таблицы при наведении */
+.crypto-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Стили для заголовка и описания раздела NFT */
+.nfts-header {
+    font-size: 36px; /* Большой размер заголовка */
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.nfts-description {
+    font-size: 18px;
+    color: #555;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+/* Контейнер для NFT картинок */
+.nft-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Индивидуальная карточка NFT */
+.nft-item {
+    width: 22%; /* Размер картинок на экране */
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.nft-item:hover {
+    transform: translateY(-10px); /* Плавный подъем при наведении */
+}
+
+.nft-image {
+    width: 100%; /* Картинка заполняет контейнер */
+    height: auto;
+    border-radius: 10px;
+}
+
+.nft-info {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.nft-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.nft-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+.usd-price {
+    font-weight: normal;
+    color: #555;
+    font-size: 14px;
+}
+
+.nft-owner {
+    font-size: 14px;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Медиазапросы для мобильных устройств */
+@media (max-width: 768px) {
+    .nft-list {
+        justify-content: center;
+    }
+
+    .nft-item {
+        width: 100%;
+    }
+}
+/* Стили таблицы криптовалют */
+.defi-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.defi-table th,
+.defi-table td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.defi-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Иконки defi */
+.defi-name {
+    display: flex;
+    align-items: center;
+}
+
+.defi-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px; /* Отступ между иконкой и текстом */
+}
+
+.numeric-data {
+    text-align: right; /* Числовые данные выравниваются по правому краю */
+    font-weight: bold;
+}
+
+/* Процент изменения */
+.percent-change {
+    font-weight: bold;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+/* Стили для строк таблицы при наведении */
+.defi-table tr:hover {
+    background-color: #f9f9f9;
+}
+/* Стили для раздела "Разработчики" */
+.developers-header {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.developer-info, .contact-info {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.developer-info h2, .contact-info h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.developer-info p, .contact-info p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.developer-button {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.developer-button:hover {
+    background-color: #333;
+}
+
+/* Медиазапросы для мобильных устройств */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        position: relative;
+    }
+
+    .content {
+        margin-left: 0; /* Убираем отступ на мобильных устройствах */
+    }
+
+    .crypto-table {
+        grid-template-columns: 1fr; /* Мобильная версия — 1 колонка */
+        gap: 20px;
+    }
+
+    .crypto-table th, .crypto-table td {
+        display: block;
+        text-align: left;
+        width: 100%;
+    }
+
+    .crypto-name {
+        flex-direction: column; /* Название и иконка — в одном столбце */
+        align-items: flex-start;
+    }
+
+    .numeric-data {
+        text-align: left; /* Все числовые данные по левому краю на мобильных устройствах */
+    }
+}
+.hidden {
+    display: none;
+}
+/* Медиазапросы для мобильных устройств */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        position: relative;
+    }
+
+    .content {
+        margin-left: 0; /* Убираем отступ на мобильных устройствах */
+    }
+
+    .defi-table {
+        grid-template-columns: 1fr; /* Мобильная версия — 1 колонка */
+        gap: 20px;
+    }
+
+    .defi-table th, .defi-table td {
+        display: block;
+        text-align: left;
+        width: 100%;
+    }
+
+    .defi-name {
+        flex-direction: column; /* Название и иконка — в одном столбце */
+        align-items: flex-start;
+    }
+
+    .numeric-data {
+        text-align: left; /* Все числовые данные по левому краю на мобильных устройствах */
+    }
+}
+.hidden {
+    display: none;
+}
+/* Адаптация блоков на мобильных устройствах */
+@media (max-width: 768px) {
+    .nft-list {
+        flex-direction: column; /* Все блоки в столбик */
+        align-items: center;
+    }
+
+    .nft-item {
+        width: 100%; /* Сделаем карточки на весь экран */
+        margin-bottom: 20px; /* Отступы между карточками */
+    }
+
+    .crypto-table, .defi-table {
+        display: block;
+        overflow-x: auto; /* Горизонтальная прокрутка */
+        white-space: nowrap;
+    }
+
+    .crypto-table th, .defi-table th, .crypto-table td, .defi-table td {
+        display: inline-block;
+        width: auto; /* Автоматическая ширина для ячеек */
+    }
+}
