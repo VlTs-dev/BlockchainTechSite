@@ -310,3 +310,93 @@ footer {
     color: #534e4b;
 }
 /* Для таблиц на мобильных устройствах */
+@media screen and (max-width: 768px) {
+    /* Шапка */
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .logo img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .main-nav ul {
+        display: block;
+        gap: 10px;
+    }
+
+    .main-nav ul li a {
+        font-size: 14px;
+    }
+
+    .header-actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .registration-form {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .registration-form input,
+    .registration-form button {
+        width: 100%;
+    }
+
+    .crypto-card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .crypto-card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .feature-card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Для таблиц */
+    .crypto-table, .defi-table {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .crypto-table th, .crypto-table td,
+    .defi-table th, .defi-table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    /* Уменьшение размеров шрифтов */
+    h2, h3, h4 {
+        font-size: 20px;
+    }
+
+    .login-btn, .register-btn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .main-nav ul li a {
+        font-size: 14px;
+    }
+
+    /* Уменьшение padding для мобильных устройств */
+    .intro-content h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+}
