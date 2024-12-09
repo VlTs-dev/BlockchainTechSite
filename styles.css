@@ -369,18 +369,6 @@ body {
         border-bottom: 1px solid #ddd;
     }
 
-    /* Показать только одну таблицу по умолчанию */
-    .content > div {
-        display: none;
-    }
-
-    /* Показать активный раздел */
-    .content > .active {
-        display: block;
-    }
-
-    /* Показать только первый раздел по умолчанию */
-    .content > #prices {
-        display: block;
-    }
+   
 }
+
