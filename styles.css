@@ -330,73 +330,40 @@ body {
 .hidden {
     display: none;
 }
-/* Медиазапросы для мобильных устройств */
 @media (max-width: 768px) {
-    .sidebar {
-        width: 100%;
-        position: relative;
-    }
-
-    .content {
-        margin-left: 0; /* Убираем отступ на мобильных устройствах */
-    }
-
-    .defi-table {
-        grid-template-columns: 1fr; /* Мобильная версия — 1 колонка */
-        gap: 20px;
-    }
-
-    .defi-table th, .defi-table td {
-        display: block;
-        text-align: left;
-        width: 100%;
-    }
-
-    .defi-name {
-        flex-direction: column; /* Название и иконка — в одном столбце */
-        align-items: flex-start;
-    }
-
-    .numeric-data {
-        text-align: left; /* Все числовые данные по левому краю на мобильных устройствах */
-    }
-}
-.hidden {
-    display: none;
-}
-/* Медиазапросы для мобильных устройств */
-@media (max-width: 768px) {
-    /* Таблицы на мобильных устройствах */
+    /* Обеспечим горизонтальную прокрутку для таблиц */
     .crypto-table,
     .defi-table {
-        width: 100%; /* Убедитесь, что таблицы растягиваются на весь экран */
-        overflow-x: auto; /* Горизонтальный скролл, если таблица слишком широкая */
+        overflow-x: auto; /* Горизонтальная прокрутка при необходимости */
+        -webkit-overflow-scrolling: touch; /* Плавная прокрутка на мобильных устройствах */
     }
 
-    /* Оформление ячеек таблицы */
-    .crypto-table th, 
-    .crypto-table td, 
-    .defi-table th, 
+    /* Разделяем содержимое таблицы для мобильных устройств */
+    .crypto-table th,
+    .crypto-table td,
+    .defi-table th,
     .defi-table td {
-        display: block; /* Делает таблицу блоковой на мобильных устройствах */
-        width: 100%; /* Каждая ячейка теперь будет занимать всю ширину */
-        text-align: left; /* Текст будет выравниваться по левому краю */
+        display: block;
+        width: 100%; /* Каждая ячейка теперь занимает 100% ширины */
     }
 
-    /* Иконки и текст внутри таблиц */
+    /* Сделаем иконки и текст в столбцах вертикальными */
     .crypto-name,
     .defi-name {
-        flex-direction: column; /* Название и иконка будут в одном столбце */
+        flex-direction: column;
         align-items: flex-start;
     }
 
+    /* Выравнивание числовых данных в левый угол */
     .numeric-data {
-        text-align: left; /* Все числовые данные будут выравниваться по левому краю */
+        text-align: left;
     }
-
-    /* Прокрутка на мобильных устройствах */
-    .crypto-table,
-    .defi-table {
-        -webkit-overflow-scrolling: touch; /* Плавная прокрутка на мобильных устройствах */
+    
+    /* Меньшие шрифты на мобильных */
+    .crypto-table th,
+    .crypto-table td,
+    .defi-table th,
+    .defi-table td {
+        font-size: 14px; /* Уменьшаем размер шрифта для мобильных */
     }
 }
