@@ -376,25 +376,3 @@ body {
         text-align: left;
     }
 }
-/* Адаптивный дизайн для второй страницы */
-@media (max-width: 768px) {
-    .sidebar {
-        display: none; /* Скрыть боковую панель на мобильных устройствах */
-    }
-
-    .content {
-        margin-left: 0; /* Убираем отступ для контента */
-    }
-
-    .crypto-table, .defi-table {
-        display: block;
-        overflow-x: auto; /* Добавляем горизонтальный скролл */
-    }
-
-    .nft-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 15px;
-        justify-content: center;
-    }
-}
