@@ -310,20 +310,3 @@ footer {
     color: #534e4b;
 }
 /* Для таблиц на мобильных устройствах */
-/* Это код для мобильных устройств */
-@media (max-width: 768px) {
-    /* Пример для адаптации содержимого на мобильных */
-    .sidebar {
-        width: 100%;
-        position: relative;
-    }
-
-    .content {
-        margin-left: 0;
-    }
-
-    .crypto-table, .defi-table {
-        width: 100%;
-        overflow-x: auto;
-    }
-}
