@@ -297,7 +297,7 @@ body {
     background-color: #333;
 }
 
-/* Медиазапросы для мобильных устройств */
+
 
 .hidden {
     display: none;
@@ -370,5 +370,16 @@ body {
     }
 
    
+}
+@media (max-width: 768px) {
+    .sidebar {
+        display: block;  /* Убедитесь, что панель отображается */
+        position: fixed; /* Панель фиксируется снизу */
+    }
+
+    .section {
+        /* Проверьте, что все секции видны на мобильных устройствах */
+        display: block;
+    }
 }
 
