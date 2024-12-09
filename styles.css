@@ -297,73 +297,30 @@ body {
 }
 
 /* Медиазапросы для мобильных устройств */
-@media (max-width: 768px) {
-    .sidebar {
-        width: 100%;
-        position: relative;
-    }
 
-    .content {
-        margin-left: 0; /* Убираем отступ на мобильных устройствах */
-    }
-
-    .crypto-table {
-        grid-template-columns: 1fr; /* Мобильная версия — 1 колонка */
-        gap: 20px;
-    }
-
-    .crypto-table th, .crypto-table td {
-        display: block;
-        text-align: left;
-        width: 100%;
-    }
-
-    .crypto-name {
-        flex-direction: column; /* Название и иконка — в одном столбце */
-        align-items: flex-start;
-    }
-
-    .numeric-data {
-        text-align: left; /* Все числовые данные по левому краю на мобильных устройствах */
-    }
-}
 .hidden {
     display: none;
 }
+/* Медиазапросы для мобильных устройств */
 @media (max-width: 768px) {
-    /* Обеспечим горизонтальную прокрутку для таблиц */
-    .crypto-table,
-    .defi-table {
-        overflow-x: auto; /* Горизонтальная прокрутка при необходимости */
-        -webkit-overflow-scrolling: touch; /* Плавная прокрутка на мобильных устройствах */
+    .crypto-table {
+        display: block; /* Разделяем таблицу на блок */
+        overflow-x: auto; /* Добавляем горизонтальную прокрутку */
+        white-space: nowrap; /* Запрещаем перенос строк в таблице */
     }
 
-    /* Разделяем содержимое таблицы для мобильных устройств */
-    .crypto-table th,
-    .crypto-table td,
-    .defi-table th,
-    .defi-table td {
-        display: block;
-        width: 100%; /* Каждая ячейка теперь занимает 100% ширины */
+    .crypto-table th, .crypto-table td {
+        text-align: left; /* Все данные выравниваются по левому краю */
+        padding: 8px; /* Добавляем отступы в ячейки */
     }
 
-    /* Сделаем иконки и текст в столбцах вертикальными */
-    .crypto-name,
-    .defi-name {
-        flex-direction: column;
-        align-items: flex-start;
+    .crypto-name {
+        display: flex; /* Используем flexbox для имени и иконки */
+        flex-direction: row; /* Имя и иконка будут в одной строке */
+        align-items: center; /* Центрируем элементы */
     }
 
-    /* Выравнивание числовых данных в левый угол */
     .numeric-data {
-        text-align: left;
-    }
-    
-    /* Меньшие шрифты на мобильных */
-    .crypto-table th,
-    .crypto-table td,
-    .defi-table th,
-    .defi-table td {
-        font-size: 14px; /* Уменьшаем размер шрифта для мобильных */
+        text-align: right; /* Числовые данные выравниваются по правому краю */
     }
 }
