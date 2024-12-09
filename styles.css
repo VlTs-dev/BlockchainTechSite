@@ -348,16 +348,19 @@ body {
 
     /* Контент */
     .content {
-        margin-bottom: 60px; /* Отступ снизу, чтобы контент не перекрывался панелью */
-        padding: 20px;
+        margin: 0 auto; /* Центрируем содержимое */
+        padding: 0 15px; /* Отступы слева и справа */
+        max-width: 100%; /* Ограничиваем ширину контента */
+        box-sizing: border-box; /* Включаем отступы в ширину */
     }
 
     /* Убираем отступы и делаем таблицы компактными */
     .crypto-table,
     .defi-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
+        margin: 0 auto; /* Центрируем таблицу */
+        padding: 0 10px; /* Отступы внутри таблицы */
+        max-width: 100%; /* Таблица занимает не более ширины экрана */
+        box-sizing: border-box; /* Учитываем отступы */
     }
 
     .crypto-table th,
@@ -367,6 +370,9 @@ body {
         padding: 8px;
         text-align: left;
         border-bottom: 1px solid #ddd;
+    }
+    .nfts-header, .developers-header {
+        text-align: center; /* Центрируем текст заголовков */
     }
 
    
