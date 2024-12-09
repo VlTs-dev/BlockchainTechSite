@@ -364,36 +364,39 @@ body {
 .hidden {
     display: none;
 }
+/* Медиазапросы для мобильных устройств */
 @media (max-width: 768px) {
-    .sidebar {
-        width: 100%;
-        position: relative;
-    }
-
-    .content {
-        margin-left: 0;
-    }
-
+    /* Таблицы на мобильных устройствах */
     .crypto-table,
     .defi-table {
-        width: 100%;  /* Убедитесь, что таблицы растягиваются на весь экран */
-        overflow-x: auto;  /* Горизонтальный скролл, если таблица слишком широкая */
+        width: 100%; /* Убедитесь, что таблицы растягиваются на весь экран */
+        overflow-x: auto; /* Горизонтальный скролл, если таблица слишком широкая */
     }
 
-    .crypto-table th, .crypto-table td, .defi-table th, .defi-table td {
-        display: block;  /* Делает таблицу блоковой на мобильных устройствах */
-        width: 100%;
-        text-align: left;
+    /* Оформление ячеек таблицы */
+    .crypto-table th, 
+    .crypto-table td, 
+    .defi-table th, 
+    .defi-table td {
+        display: block; /* Делает таблицу блоковой на мобильных устройствах */
+        width: 100%; /* Каждая ячейка теперь будет занимать всю ширину */
+        text-align: left; /* Текст будет выравниваться по левому краю */
     }
 
     /* Иконки и текст внутри таблиц */
     .crypto-name,
     .defi-name {
-        flex-direction: column; /* Название и иконка — в одном столбце */
+        flex-direction: column; /* Название и иконка будут в одном столбце */
         align-items: flex-start;
     }
 
     .numeric-data {
-        text-align: left; /* Все числовые данные по левому краю на мобильных устройствах */
+        text-align: left; /* Все числовые данные будут выравниваться по левому краю */
+    }
+
+    /* Прокрутка на мобильных устройствах */
+    .crypto-table,
+    .defi-table {
+        -webkit-overflow-scrolling: touch; /* Плавная прокрутка на мобильных устройствах */
     }
 }
