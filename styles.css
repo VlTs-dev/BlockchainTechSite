@@ -364,51 +364,37 @@ body {
 .hidden {
     display: none;
 }
-/* Мобильные стили */
 @media (max-width: 768px) {
-    /* Боковая панель */
+    .crypto-table, .defi-table {
+        width: 100%;  /* Убедитесь, что таблицы растягиваются на весь экран */
+        overflow-x: auto;  /* Горизонтальный скролл, если таблица слишком широкая */
+    }
+
+    .crypto-table th, .crypto-table td, .defi-table th, .defi-table td {
+        display: block;  /* Делает таблицу блоковой на мобильных устройствах */
+        width: 100%;
+        text-align: left;
+    }
+}
+/* Адаптивный дизайн для второй страницы */
+@media (max-width: 768px) {
     .sidebar {
-        width: 100%;
-        position: static; /* Убираем фиксированное позиционирование */
+        display: none; /* Скрыть боковую панель на мобильных устройствах */
     }
 
-    /* Контент */
     .content {
-        margin-left: 0; /* Убираем отступ */
+        margin-left: 0; /* Убираем отступ для контента */
     }
 
-    /* Таблицы для DeFi */
-    .defi-table, .crypto-table {
-        width: 100%;
-        table-layout: auto;
-        overflow-x: auto; /* Горизонтальная прокрутка */
-    }
-
-    .defi-table th, .defi-table td, .crypto-table th, .crypto-table td {
+    .crypto-table, .defi-table {
         display: block;
-        width: 100%;
-    }
-
-    /* Выравнивание элементов */
-    .defi-name, .crypto-name {
-        flex-direction: column; /* Иконки и текст идут вертикально */
-    }
-
-    /* Изменение шрифтов */
-    .defi-table th, .crypto-table th {
-        font-size: 14px;
-    }
-
-    .defi-table td, .crypto-table td {
-        font-size: 12px;
-    }
-
-    /* NFT карточки */
-    .nft-item {
-        width: 100%; /* Делаем карточки NFT шириной на всю страницу */
+        overflow-x: auto; /* Добавляем горизонтальный скролл */
     }
 
     .nft-list {
-        flex-direction: column; /* Размещение NFT карточек вертикально */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
     }
 }
