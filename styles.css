@@ -365,7 +365,17 @@ body {
     display: none;
 }
 @media (max-width: 768px) {
-    .crypto-table, .defi-table {
+    .sidebar {
+        width: 100%;
+        position: relative;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    .crypto-table,
+    .defi-table {
         width: 100%;  /* Убедитесь, что таблицы растягиваются на весь экран */
         overflow-x: auto;  /* Горизонтальный скролл, если таблица слишком широкая */
     }
@@ -374,5 +384,16 @@ body {
         display: block;  /* Делает таблицу блоковой на мобильных устройствах */
         width: 100%;
         text-align: left;
+    }
+
+    /* Иконки и текст внутри таблиц */
+    .crypto-name,
+    .defi-name {
+        flex-direction: column; /* Название и иконка — в одном столбце */
+        align-items: flex-start;
+    }
+
+    .numeric-data {
+        text-align: left; /* Все числовые данные по левому краю на мобильных устройствах */
     }
 }
