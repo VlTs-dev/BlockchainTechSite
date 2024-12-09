@@ -1,1 +1,1 @@
-# BlockchainTechSite
+# Сайт для курсовой работы
