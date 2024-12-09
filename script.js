@@ -5,12 +5,15 @@ document.addEventListener("DOMContentLoaded", () => {
     // Функция для переключения разделов
     const switchSection = (event, sectionId) => {
         event.preventDefault();
+        console.log(`Switching to section: ${sectionId}`); // Логируем переключение
 
         sections.forEach(section => {
             if (section.id === sectionId) {
                 section.classList.remove("hidden");
+                console.log(`Showing section: ${sectionId}`);
             } else {
                 section.classList.add("hidden");
+                console.log(`Hiding section: ${section.id}`);
             }
         });
     };
@@ -20,7 +23,13 @@ document.addEventListener("DOMContentLoaded", () => {
         const sectionId = link.getAttribute("data-section");
 
         // Обрабатываем как click, так и touchstart
-        link.addEventListener("click", (event) => switchSection(event, sectionId));
-        link.addEventListener("touchstart", (event) => switchSection(event, sectionId)); // Добавляем touchstart
+        link.addEventListener("click", (event) => {
+            console.log("Click event triggered");
+            switchSection(event, sectionId);
+        });
+        link.addEventListener("touchstart", (event) => {
+            console.log("Touch event triggered");
+            switchSection(event, sectionId);
+        });
     });
 });
