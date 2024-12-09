@@ -316,7 +316,7 @@ body {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        z-index: 100;
+        z-index: 9999;
     }
 
     /* Стили для ссылок в боковом меню */
@@ -370,16 +370,5 @@ body {
     }
 
    
-}
-@media (max-width: 768px) {
-    .sidebar {
-        display: block;  /* Убедитесь, что панель отображается */
-        position: fixed; /* Панель фиксируется снизу */
-    }
-
-    .section {
-        /* Проверьте, что все секции видны на мобильных устройствах */
-        display: block;
-    }
 }
 
