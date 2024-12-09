@@ -2,8 +2,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const links = document.querySelectorAll(".sidebar ul li a");
     const sections = document.querySelectorAll(".section");
 
-    // Функция для переключения секций
-    function switchSection(sectionId) {
+    // Функция для переключения разделов
+    const switchSection = (event, sectionId) => {
+        event.preventDefault();
+
         sections.forEach(section => {
             if (section.id === sectionId) {
                 section.classList.remove("hidden");
@@ -11,22 +13,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 section.classList.add("hidden");
             }
         });
-    }
+    };
 
-    // Добавляем обработчики событий для клика и касания
+    // Привязываем обработчики событий
     links.forEach(link => {
-        // Для клика
-        link.addEventListener("click", event => {
-            event.preventDefault();
-            const sectionId = link.getAttribute("data-section");
-            switchSection(sectionId);
-        });
+        const sectionId = link.getAttribute("data-section");
 
-        // Для касания (для мобильных устройств)
-        link.addEventListener("touchstart", event => {
-            event.preventDefault();
-            const sectionId = link.getAttribute("data-section");
-            switchSection(sectionId);
-        });
+        // Обрабатываем как click, так и touchstart
+        link.addEventListener("click", (event) => switchSection(event, sectionId));
+        link.addEventListener("touchstart", (event) => switchSection(event, sectionId)); // Добавляем touchstart
     });
 });
