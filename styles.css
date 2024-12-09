@@ -302,3 +302,85 @@ body {
 .hidden {
     display: none;
 }
+/* Стили для мобильных устройств */
+@media (max-width: 768px) {
+    /* Боковая панель */
+    .sidebar {
+        position: fixed;
+        bottom: 0; /* Закрепляем панель внизу */
+        left: 0;
+        width: 100%; /* Ширина панели на весь экран */
+        height: 60px; /* Высота панели, можно регулировать */
+        background-color: #f4f4f4;
+        border-top: 1px solid #ddd;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 100;
+    }
+
+    /* Стили для ссылок в боковом меню */
+    .sidebar ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        list-style: none;
+    }
+
+    .sidebar ul li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 14px; /* Размер шрифта для мобильных устройств */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    /* Иконки в боковой панели */
+    .sidebar ul li img {
+        width: 24px;
+        height: 24px;
+        margin-bottom: 5px;
+    }
+
+    /* Контент */
+    .content {
+        margin-bottom: 60px; /* Отступ снизу, чтобы контент не перекрывался панелью */
+        padding: 20px;
+    }
+
+    /* Убираем отступы и делаем таблицы компактными */
+    .crypto-table,
+    .defi-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    .crypto-table th,
+    .crypto-table td,
+    .defi-table th,
+    .defi-table td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    /* Показать только одну таблицу по умолчанию */
+    .content > div {
+        display: none;
+    }
+
+    /* Показать активный раздел */
+    .content > .active {
+        display: block;
+    }
+
+    /* Показать только первый раздел по умолчанию */
+    .content > #prices {
+        display: block;
+    }
+}
