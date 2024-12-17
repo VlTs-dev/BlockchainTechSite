@@ -63,6 +63,7 @@ body {
 .crypto-table {
     width: 100%;
     border-collapse: collapse;
+   
     margin-top: 20px;
 }
 
@@ -71,6 +72,7 @@ body {
     text-align: left;
     padding: 10px;
     border-bottom: 1px solid #ddd;
+    border: none;
 }
 
 .crypto-table th {
@@ -211,6 +213,7 @@ body {
     text-align: left;
     padding: 10px;
     border-bottom: 1px solid #ddd;
+    border: none;
 }
 
 .defi-table th {
@@ -378,3 +381,41 @@ body {
    
 }
 
+/* Кнопка "Сделка" с овальным дизайном */
+.deal-btn {
+    background-color: #000; /* Черный фон */
+    color: #fff; /* Белый текст */
+    border: none;
+    padding: 8px 20px; /* Отступы для формы */
+    border-radius: 30px; /* Делаем кнопку овальной */
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.deal-btn:hover {
+    background-color: #333; /* Темный оттенок при наведении */
+}
+
+/* Адаптивная кнопка на мобильных устройствах */
+@media (max-width: 768px) {
+    .deal-btn {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 12px;
+        border-radius: 30px; /* Овальная форма для мобильных тоже */
+    }
+    /* Центрирование текста и кнопки на мобильных */
+    .crypto-table td {
+        text-align: center;
+    }
+}
+
+/* Выровнять содержимое ячейки "Сделка" по центру */
+.crypto-table td, .crypto-table th {
+    text-align: center; /* Горизонтальное выравнивание */
+    vertical-align: middle; /* Вертикальное выравнивание */
+}
