@@ -400,3 +400,117 @@ footer {
         margin-bottom: 10px;
     }
 }
+/* Секция с новостями без контейнера */
+#news-preview {
+    padding: 50px 20px; /* Внутренние отступы сверху/снизу и слева */
+    background-color: #f9f9f9; /* Цвет фона */
+    margin: 0; /* Убираем внешние отступы */
+}
+
+#news-preview h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#news-preview p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.news-link-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.news-link-btn:hover {
+    background-color: #0056b3;
+}
+/* Центрирование кнопки */
+#news-preview .btn-container {
+    text-align: center; /* Центрирование содержимого */
+}
+/* Оптимизация под мобильные устройства */
+@media (max-width: 768px) {
+    #news-preview h2 {
+        font-size: 20px; /* Уменьшение размера заголовка */
+        text-align: center; /* Центрирование текста */
+    }
+
+    #news-preview p {
+        font-size: 14px; /* Уменьшение размера текста */
+        text-align: center; /* Центрирование текста */
+    }
+
+    .news-link-btn {
+        width: 100%; /* Кнопка занимает всю ширину */
+        padding: 12px; /* Увеличение отступов кнопки */
+        font-size: 14px; /* Уменьшение шрифта кнопки */
+    }
+}
+
+/* Секция с подкастами */
+#podcast-preview {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.podcast-content {
+    max-width: 1200px; /* Максимальная ширина блока */
+    margin: 0 auto; /* Центрирование блока */
+}
+
+#podcast-preview h2,
+#podcast-preview p {
+    margin-left: 0; /* Прижимаем текст к левому краю */
+    text-align: left; /* Текст остается слева */
+}
+
+.podcast-link-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.podcast-link-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Центрирование кнопки */
+.btn-container {
+    text-align: center; /* Центрирует кнопку */
+    margin-top: 20px;
+}
+
+/* Оптимизация для мобильных устройств */
+@media (max-width: 768px) {
+    #podcast-preview {
+        padding: 30px 10px; /* Уменьшаем отступы на мобильных устройствах */
+    }
+
+    .podcast-content {
+        text-align: center; /* Центрируем весь контент на маленьких экранах */
+    }
+
+    #podcast-preview h2,
+    #podcast-preview p {
+        text-align: center; /* Текст и заголовок по центру */
+    }
+
+    .podcast-link-btn {
+        font-size: 12px; /* Уменьшаем размер шрифта кнопки */
+        padding: 6px 12px; /* Уменьшаем отступы кнопки */
+    }
+}
