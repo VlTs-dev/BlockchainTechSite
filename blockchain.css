@@ -437,24 +437,7 @@ footer {
 #news-preview .btn-container {
     text-align: center; /* Центрирование содержимого */
 }
-/* Оптимизация под мобильные устройства */
-@media (max-width: 768px) {
-    #news-preview h2 {
-        font-size: 20px; /* Уменьшение размера заголовка */
-        text-align: center; /* Центрирование текста */
-    }
 
-    #news-preview p {
-        font-size: 14px; /* Уменьшение размера текста */
-        text-align: center; /* Центрирование текста */
-    }
-
-    .news-link-btn {
-        width: 100%; /* Кнопка занимает всю ширину */
-        padding: 12px; /* Увеличение отступов кнопки */
-        font-size: 14px; /* Уменьшение шрифта кнопки */
-    }
-}
 
 /* Секция с подкастами */
 #podcast-preview {
@@ -510,6 +493,27 @@ footer {
     }
 
     .podcast-link-btn {
+        font-size: 12px; /* Уменьшаем размер шрифта кнопки */
+        padding: 6px 12px; /* Уменьшаем отступы кнопки */
+    }
+}
+
+/* Оптимизация под мобильные устройства */
+@media (max-width: 768px) {
+    #news-preview {
+        padding: 30px 10px; /* Уменьшаем отступы на мобильных устройствах */
+    }
+
+    .news-content {
+        text-align: center; /* Центрируем весь контент на маленьких экранах */
+    }
+
+    #news-preview h2,
+    #news-preview p {
+        text-align: center; /* Текст и заголовок по центру */
+    }
+
+    .news-link-btn {
         font-size: 12px; /* Уменьшаем размер шрифта кнопки */
         padding: 6px 12px; /* Уменьшаем отступы кнопки */
     }
