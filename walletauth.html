@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Technologies - Авторизация</title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <!-- Верхняя панель -->
+    <header class="header">
+        <div class="header-container">
+            <!-- Логотип -->
+            <div class="logo">
+                <img src="https://res.cloudinary.com/alchemy-website/image/upload/v1710276279/dapp-store/chain-logos/Fantom.svg" alt="Логотип" class="logo-img">
+                <span class="brand-name">Blockchain Technologies</span>
+            </div>
+            <!-- Вход для зарегистрированных -->
+            <div class="login-link">
+                <span>У вас уже есть аккаунт?</span>
+                <a href="#" class="login-btn">Войти</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной блок регистрации -->
+    <main class="auth-container">
+        <div class="form-container">
+            <!-- Иконка пользователя -->
+            <div class="user-icon">
+                <img src="https://ionoto.ru/upload/medialibrary/a1f/tcs61nk83dig738gik8qtkcx6ue7sgek.png" alt="User Icon" class="avatar-img">
+            </div>
+            <!-- Заголовок -->
+            <h1>Давайте начнем</h1>
+            <p>Введите адрес электронной почты и пароль.</p>
+
+            <!-- Форма регистрации -->
+            <form action="#" method="POST" class="auth-form">
+                <!-- Email -->
+                <label for="email">Адрес эл. почты</label>
+                <input type="email" id="email" placeholder="your@email.com" required>
+
+                <!-- Создание пароля -->
+                <label for="password">Создать пароль</label>
+                <div class="password-container">
+                    <input type="password" id="password" placeholder="Минимум 8 символов" required>
+                    <span class="show-password"></span>
+                </div>
+
+                <!-- Подтверждение пароля -->
+                <label for="confirm-password">Подтвердите пароль</label>
+                <div class="password-container">
+                    <input type="password" id="confirm-password" placeholder="Повторно введите пароль" required>
+                    <span class="show-password"></span>
+                </div>
+
+                <!-- Чекбокс и условия -->
+                <div class="terms">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">
+                        I certify I am 18 years of age or older and agree to the Blockchain Technologies
+                        <a href="#">Условия предоставления услуг</a> & <a href="#">Политика конфиденциальности</a>.
+                    </label>
+                </div>
+
+                <!-- Кнопка -->
+                <button type="submit" class="submit-btn">Далее</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
