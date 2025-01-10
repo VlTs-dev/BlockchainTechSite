@@ -91,7 +91,11 @@ body {
     width: 30px;
     height: 30px;
     margin-right: 10px; /* Отступ между иконкой и текстом */
+    vertical-align: middle;
+    border-radius: 50%; /* Делаем иконки круглыми */
+    object-fit: cover; /* Подгоняем содержимое под круг */
 }
+
 
 .numeric-data {
     text-align: right; /* Числовые данные выравниваются по правому краю */
@@ -383,20 +387,20 @@ body {
 
 /* Кнопка "Сделка" с овальным дизайном */
 .deal-btn {
-    background-color: #000; /* Черный фон */
-    color: #fff; /* Белый текст */
-    border: none;
-    padding: 8px 20px; /* Отступы для формы */
-    border-radius: 30px; /* Делаем кнопку овальной */
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-transform: uppercase;
-    font-weight: bold;
+    background-color: #000 !important; /* Черный фон */
+    color: #fff !important; /* Белый текст */
+    border: none !important;
+    padding: 8px 20px !important; /* Отступы для формы */
+    border-radius: 30px !important; /* Делаем кнопку овальной */
+    font-size: 14px !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s ease !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
 }
 
 .deal-btn:hover {
-    background-color: #333; /* Темный оттенок при наведении */
+    background-color: #333 !important; /* Темный оттенок при наведении */
 }
 
 /* Адаптивная кнопка на мобильных устройствах */
