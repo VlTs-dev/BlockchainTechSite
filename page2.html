@@ -40,7 +40,7 @@
         <!-- Раздел "Цены" -->
         <div id="prices" class="section">
             <h1>Цены криптовалют</h1>
-            <table class="crypto-table">
+            <table id="crypto-table" class="crypto-table">
                 <thead>
                     <tr>
                         <th>Имя</th>
@@ -51,19 +51,20 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr id="bitcoin-row">
                         <td class="crypto-name">
                             <img src="https://spacecore.pro/images/icons/bitcoin.svg" alt="Bitcoin" class="crypto-icon">
                             <span>Bitcoin (BTC)</span>
                         </td>
-                        <td class="numeric-data">$99 872,00</td>
-                        <td class="percent-change green">+0,03%</td>
-                        <td class="numeric-data">$1 977 763 822 929</td>
+                        <td id="bitcoin-price" class="numeric-data">$99,872.00</td>
+                        <td id="bitcoin-change" class="percent-change green">+0.03%</td>
+                        <td id="bitcoin-market-cap" class="numeric-data">$1,977,763,822,929</td>
                         <td>
                             <button class="deal-btn" onclick="window.location.href='walletauth.html';">Сделка</button>
                         </td>
                     </tr>
-                    <tr>
+                    
+                    <tr id="ethereum-row">
                         <td class="crypto-name">
                             <img src="https://static.tildacdn.com/tild3236-6133-4335-a366-316262313538/ethereum-eth.svg" alt="Ethereum" class="crypto-icon">
                             <span>Ethereum (ETH)</span>
@@ -87,7 +88,7 @@
                             <button class="deal-btn" onclick="window.location.href='walletauth.html';">Сделка</button>
                         </td>
                     </tr>
-                    <tr>
+                    <tr id="just-a-chill-guy-row">
                         <td class="crypto-name">
                             <img src="https://img.cryptorank.io/coins/chill_guy1731936768520.png" alt="Just a chill guy" class="crypto-icon">
                             <span>Just a chill guy (CHILLGUY)</span>
@@ -422,7 +423,7 @@
            
             
             <!-- Таблица DeFi -->
-            <table class="defi-table">
+            <table id="defi-table" class="defi-table">
                 <thead>
                     <tr>
                         <th>Имя</th>
@@ -548,6 +549,6 @@
                 
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
