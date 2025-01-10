@@ -25,8 +25,8 @@
         </nav>
         <div class="header-actions">
             
-            <button class="login-btn">Авторизация</button>
-            <button class="register-btn">Зарегистрироваться</button>
+            <button class="login-btn" onclick="window.location.href='walletauth.html';">Авторизация</button>
+            <button class="register-btn" onclick="window.location.href='walletauth.html';">Зарегистрироваться</button>
         </div>
     </div>
 </header>
@@ -39,7 +39,7 @@
             <p>С 2011 года доверяют миллионы людей, которые совершили криптовалютные транзакции на сумму более 1 триллиона долларов.</p>
             <form class="registration-form">
                 <input type="email" placeholder="Ваш email" required>
-                <button type="submit">Зарегистрироваться</button>
+                <button type="submit" onclick="window.location.href='walletauth.html';">Зарегистрироваться</button>
             </form>
         </div>
     </section>
@@ -53,7 +53,10 @@
         <div class="crypto-card">
             <img src="https://spacecore.pro/images/icons/bitcoin.svg" alt="Bitcoin Logo">
             <h3>Bitcoin BTC</h3>
-            <p>$99,900.21 <span class="price-change positive">+0.18%</span></p>
+            <p>
+                <span id="bitcoin-price">$99,900.21</span>
+                <span id="bitcoin-change" class="price-change positive">+0.18%</span>
+            </p>
             <div class="card-actions">
                 <button class="custom-btn buy-btn" onclick="window.location.href='walletauth.html';">Купить</button>
                 <button class="custom-btn trade-btn" onclick="window.location.href='walletauth.html';">Торговля</button>
@@ -63,7 +66,10 @@
         <div class="crypto-card">
             <img src="https://static.tildacdn.com/tild3236-6133-4335-a366-316262313538/ethereum-eth.svg" alt="Ethereum Logo">
             <h3>Ethereum ETH</h3>
-            <p>$3,986.51 <span class="price-change positive">+1.70%</span></p>
+            <p>
+                <span id="ethereum-price">$3,986.51</span>
+                <span id="ethereum-change" class="price-change positive">+1.70%</span>
+            </p>
             <div class="card-actions">
                 <button class="custom-btn buy-btn" onclick="window.location.href='walletauth.html';">Купить</button>
                 <button class="custom-btn trade-btn" onclick="window.location.href='walletauth.html';">Торговля</button>
@@ -73,7 +79,10 @@
         <div class="crypto-card">
             <img src="https://cdn.worldvectorlogo.com/logos/dogecoin.svg" alt="Dogecoin Logo">
             <h3>Dogecoin DOGE</h3>
-            <p>$0.38 <span class="price-change negative">-0.80%</span></p>
+            <p>
+                <span id="dogecoin-price">$0.38</span>
+                <span id="dogecoin-change" class="price-change negative">-0.80%</span>
+            </p>
             <div class="card-actions">
                 <button class="custom-btn buy-btn" onclick="window.location.href='walletauth.html';">Купить</button>
                 <button class="custom-btn trade-btn" onclick="window.location.href='walletauth.html';">Торговля</button>
@@ -83,7 +92,10 @@
         <div class="crypto-card">
             <img src="https://img.cryptorank.io/coins/solana1606979093056.png" alt="Solana Logo">
             <h3>Solana SOL</h3>
-            <p>$240.63 <span class="price-change positive">+1.19%</span></p>
+            <p>
+                <span id="solana-price">$240.63</span>
+                <span id="solana-change" class="price-change positive">+1.19%</span>
+            </p>
             <div class="card-actions">
                 <button class="custom-btn buy-btn" onclick="window.location.href='walletauth.html';">Купить</button>
                 <button class="custom-btn trade-btn" onclick="window.location.href='walletauth.html';">Торговля</button>
@@ -165,5 +177,6 @@
     </ul>
 </footer>
 
+    <script src="script.js" defer></script>
 </body>
 </html>
